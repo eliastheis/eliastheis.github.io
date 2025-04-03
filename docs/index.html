@@ -87,6 +87,34 @@
       <div id="work">
         <h1>Work.</h1>
         <div class="projects" id="work_section">
+
+                      <!-- Wordle24.de -->
+                      <a href="https://wordle24.de/" target="_blank">
+                        <section>
+                            <div class="section_title">wordle24.de</div>
+                            <div class="about_section">
+                            <span style="display:block;">Play German wordle with friends for free</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JS, PHP</span>
+                            </div>
+                        </section>
+                      </a>
+                      
+                      <!-- Jungschar Spiele Wiki -->
+                      <a href="https://jungschar.github.io/" target="_blank">
+                        <section>
+                            <div class="section_title">jungschar.github.io</div>
+                            <div class="about_section">
+                            <span style="display:block;">Jungschar Spiele Wiki (jungschar.github.io)</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                      </a>
             
                       <!-- Rockalyzer -->
                       <a href="https://github.com/eliastheis/rockalyzer" target="_blank">
@@ -108,7 +136,7 @@
                         <section>
                             <div class="section_title">moodle-darkmode</div>
                             <div class="about_section">
-                            <span style="display:block;">Darkmode für BUW Moodle und Studilöwe</span>
+                            <span style="display:block;">Darkmode for BUW Moodle und Studilöwe</span>
                             </div>
                             <div class="bottom_section">
                                 <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
@@ -117,66 +145,7 @@
                             </div>
                         </section>
                       </a>
-            
-                      <!-- Jungschar Spiele Wiki -->
-                      <a href="https://jungschar.github.io/" target="_blank">
-                        <section>
-                            <div class="section_title">jungschar.github.io</div>
-                            <div class="about_section">
-                            <span style="display:block;">Jungschar Spiele Wiki (jungschar.github.io)</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                      </a>
 
-                      <!-- Keyboard Statistics -->
-                      <a href="https://github.com/wbr-ths/keyboard-statistics" target="_blank">
-                        <section>
-                            <div class="section_title">keyboard-statistics</div>
-                            <div class="about_section">
-                            <span style="display:block;">Web-app to analyze keyboard usage</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                      </a>
-                    
-                      <!-- Random Number Generator -->
-                      <a href="https://github.com/eliastheis/random-number-generator" target="_blank">
-                        <section>
-                            <div class="section_title">random-number-generator</div>
-                            <div class="about_section">
-                            <span style="display:block;">Pseudo Random Number Generator based on the logistic map bifurcation diagram</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-
-                      <!-- Face Grouper -->
-                      <a href="https://github.com/wbr-ths/face-grouper" target="_blank">
-                        <section>
-                            <div class="section_title">face-grouper</div>
-                            <div class="about_section">
-                            <span style="display:block;">Using face recognition to arrange faces in space based on similarity</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                      </a>
                         
         </div>
       </div> 
@@ -196,8 +165,8 @@
           document.getElementById("loading").classList.remove("animated");
           document.getElementById("loading").classList.remove("fadeOut");
           document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
+        }, 500);
+      }, 200);
       $.getJSON("blog.json", function(blog) {
         blog = blog || [];
         if (blog.length == 0) {
